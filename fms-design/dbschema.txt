@@ -1,0 +1,53 @@
+drop table if exists user;
+drop table if exists authtoken;
+drop table if exists person;
+drop table if exists events;
+
+create table user
+(
+    username varchar(25) not null primary key,
+    password varchar(25) not null,
+    email varchar(255) not null,
+    firstname varchar(25) not null,
+    lastname varchar(25) not null,
+    gender char(1) not null,
+    personid varchar(25) not null
+);
+
+create table authtoken
+(
+    id char(10) not null primary key,
+    user varchar(25) not null,
+    foreign key(user) references user(username)
+);
+
+create table person
+(
+    id char(6) not null primary key,
+    username varchar(25) not null,
+    firstname varchar(25) not null,
+    lastname varchar(25) not null,
+    gender char(1) not null,
+    fatherid char(6),
+    motherid char(6),
+    spouseid char(6),
+    foreign key(username) references user(username),
+    foreign key(fatherid) references person(id),
+    foreign key(motherid) references person(id),
+    foreign key(spouseid) references person(id)
+);
+
+create table events
+(
+    id char(7) not null primary key,
+    user varchar(25) not null,
+    person_id char(6) not null,
+    latitude int not null,
+    longitude int not null,
+    country varchar(255) not null,
+    city varchar(255) not null,
+    type varchar(255) not null,
+    year int not null,
+    foreign key(user) references user(username),
+    foreign key(person_id) references person(id)
+);

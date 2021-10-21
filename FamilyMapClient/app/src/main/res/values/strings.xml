@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FamilyMapClient</string>
+    <string name="registerButton">Register</string>
+    <string name="loginButton">Login</string>
+    <string name="radioMale">Male</string>
+    <string name="radioFemale">Female</string>
+    <string name="failedToast">Action failed. Please try again.</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="lifeEvents">Life Events</string>
+    <string name="family">Family</string>
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="spouse">Spouse</string>
+    <string name="child">Child</string>
+    <string name="titleLifeStoryLines">Life Story Lines</string>
+    <string name="desLifeStoryLines">SHOW LIFE STORY LINES</string>
+    <string name="titleFamilyTreeLines">Family Tree Lines</string>
+    <string name="desFamilyTreeLines">SHOW FAMILY TREE LINES</string>
+    <string name="titleSpouseLines">Spouse Lines</string>
+    <string name="desSpouseLines">SHOW SPOUSE LINES</string>
+    <string name="titleFatherSide">Father\'s Side</string>
+    <string name="desFathersSide">FILTER BY FATHER\'S SIDE OF THE FAMILY</string>
+    <string name="titleMothersSide">Mother\'s Side</string>
+    <string name="desMothersSide">FILTER BY MOTHER\'S SIDE OF THE FAMILY</string>
+    <string name="titleFilterEventsMale">Male Events</string>
+    <string name="titleFilterEventsFemale">Female Events</string>
+    <string name="desFilterEvents">FILTER EVENTS BASED ON GENDER</string>
+    <string name="titleLogout">Logout</string>
+    <string name="desLogout">RETURN TO LOGIN SCREEN</string>
+</resources>
